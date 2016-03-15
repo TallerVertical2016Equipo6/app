@@ -7,14 +7,101 @@
       <link type="text/css" rel="stylesheet" href="dist/semantic.min.css"  media="screen,projection"/>
 
       <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	 
+	  
+	  <link rel="stylesheet" type="text/css" href="css/index/index.css">
     </head>
 
     <body>
-	     
+
+		<div class="ui two column center aligned grid">
+		  <div id="middle-container" class="column">LOGO
+			</div>
+		</div>
+		
+		
+		<div class="ui grid container" id="content">
+			<div class="one wide column"></div>
+			 <div class="fourteen wide column">
+				<div id = "box1" class="ui raised segment">
+				
+				
+				
+				<div id="changing-box" class="ui segment">
+							<!-- first form to b filled -->
+					<div class="two ui buttons">
+						<button id="visitant-b" class="ui button">Visitante 
+							<i class="user icon"></i>
+						</button>
+						
+						<button id="personal-b" class="ui button">
+							Personal 
+							<i class="student icon"></i>
+						</button>	
+					</div>
+					
+				</div>
+					
+				<div id="changing-box2" class="ui center aligned segment">
+						<div class="ui floating dropdown labeled search icon button">
+						<i class="search icon"></i>
+								<span class="text">Seleccionar Area</span>
+								 <div class="menu">
+									<div class="item">Area A</div>
+									<div class="item">Area B</div>
+									<div class="item">Area A</div>
+									<div class="item">Area B</div>
+								</div>
+						</div>
+
+				</div>
+				
+				
+				<div id="search-b" class="ui center aligned segment">
+					 <button class="fluid ui red button">Buscar</button>
+				</div>
+				
+				
+				</div>
+				
+			</div>
+		</div>
+			
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="dist/semantic.min.js"></script>
+	  
+	   <script>
+	   
+		
+		$('#personal-b').on('click', function (){
+		
+			$('#changing-box').transition({
+				animation	: 'scale',
+				duration	: '1s',
+				onComplete : function(){
+					$('#changing-box2').transition('fade up');
+					$('#search-b').transition('fade up');
+					
+					}
+				})
+		});
+		
+		
+		$('#visitant-b').on('click', function (){
+		
+			alert('visitant pressed');
+		
+		});
+		
+
+		$('#changing-box2').hide();
+		$('#search-b').hide();
+		
+		
+	  </script>
+	  
     </body>
   </html>
         
