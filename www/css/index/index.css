@@ -1,12 +1,9 @@
-#content{
-	
+#content{	
 	margin-top: 50px;
-
 }
 
 
 #middle-container{
-	
 	
 	 margin-top: 80px;
 	 height: 200px;
@@ -16,10 +13,16 @@
 #changing-box2{
 	height: 85px;
 	padding-top: 25px;
+	z-index: 99999;
 }
 
 
 #changing-box{
 	height: 85px;
 	padding-top: 25px;
+}
+
+#dropdown{
+	z-index: 99999;
+	position:relative;
 }

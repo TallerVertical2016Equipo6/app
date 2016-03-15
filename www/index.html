@@ -16,7 +16,8 @@
     <body>
 
 		<div class="ui two column center aligned grid">
-		  <div id="middle-container" class="column">LOGO
+		  <div id="middle-container" class="column">
+				LOGO
 			</div>
 		</div>
 		
@@ -25,16 +26,13 @@
 			<div class="one wide column"></div>
 			 <div class="fourteen wide column">
 				<div id = "box1" class="ui raised segment">
-				
-				
-				
+								
 				<div id="changing-box" class="ui segment">
 							<!-- first form to b filled -->
 					<div class="two ui buttons">
 						<button id="visitant-b" class="ui button">Visitante 
 							<i class="user icon"></i>
 						</button>
-						
 						<button id="personal-b" class="ui button">
 							Personal 
 							<i class="student icon"></i>
@@ -44,14 +42,13 @@
 				</div>
 					
 				<div id="changing-box2" class="ui center aligned segment">
-						<div class="ui floating dropdown labeled search icon button">
+						<div  class="ui floating dropdown labeled search icon button">
 						<i class="search icon"></i>
 								<span class="text">Seleccionar Area</span>
-								 <div class="menu">
+								 <div class="menu" tabindex="-1">
 									<div class="item">Area A</div>
 									<div class="item">Area B</div>
-									<div class="item">Area A</div>
-									<div class="item">Area B</div>
+									<div class="item">Area C</div>
 								</div>
 						</div>
 
@@ -75,6 +72,12 @@
 	   <script>
 	   
 		
+		
+		
+		
+		$('.ui.search.dropdown').dropdown();
+		
+		
 		$('#personal-b').on('click', function (){
 		
 			$('#changing-box').transition({
@@ -91,7 +94,37 @@
 		
 		$('#visitant-b').on('click', function (){
 		
-			alert('visitant pressed');
+		
+			$('#box1').transition('scale', '1.5');
+			$('#middle-container').transition({
+				animation: 'scale',
+				duration : '2',
+				onComplete : function(){
+					
+					location.replace("AreaMenu.html");
+			
+				}
+				
+			})
+		
+		});
+		
+		
+		
+		$('#search-b').on('click', function (){
+		
+		
+			$('#box1').transition('scale', '1.5');
+			$('#middle-container').transition({
+				animation: 'scale',
+				duration : '2',
+				onComplete : function(){
+					
+					location.replace("AreaMenu.html");
+			
+				}
+				
+			})
 		
 		});
 		
