@@ -8,9 +8,8 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-	 
-	  
 	  <link rel="stylesheet" type="text/css" href="css/index/index.css">
+	  
     </head>
 
     <body>
@@ -42,16 +41,17 @@
 				</div>
 					
 				<div id="changing-box2" class="ui center aligned segment">
-						<div  class="ui floating dropdown labeled search icon button">
-						<i class="search icon"></i>
-								<span class="text">Seleccionar Area</span>
-								 <div class="menu" tabindex="-1">
-									<div class="item">Area A</div>
-									<div class="item">Area B</div>
-									<div class="item">Area C</div>
-								</div>
-						</div>
-
+				
+				
+					<select id="dropdown" class="ui search dropdown">
+						  <option value="">Selecionar Area</option>
+						  <option value="A">Area A</option>
+						  <option value="B">Area B</option>
+						  <option value="C">Area C</option>
+						  
+					</select>
+				
+				
 				</div>
 				
 				
@@ -69,24 +69,27 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="dist/semantic.min.js"></script>
 	  
+	  <!-- Necesary for jstorage, keys are "user-type" and "selected area"-->
+	  <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+      <script src="https://raw.github.com/andris9/jStorage/master/jstorage.js"></script>
+	  
 	   <script>
-	   
-		
-		
-		
-		
+	  
 		$('.ui.search.dropdown').dropdown();
 		
-		
+
 		$('#personal-b').on('click', function (){
-		
+			
+			
+			$.jStorage.set("user-type", "alumni");
+			
 			$('#changing-box').transition({
 				animation	: 'scale',
 				duration	: '1s',
 				onComplete : function(){
+				
 					$('#changing-box2').transition('fade up');
 					$('#search-b').transition('fade up');
-					
 					}
 				})
 		});
@@ -94,7 +97,8 @@
 		
 		$('#visitant-b').on('click', function (){
 		
-		
+			$.jStorage.set("user-type", "visitante");
+			
 			$('#box1').transition('scale', '1.5');
 			$('#middle-container').transition({
 				animation: 'scale',
@@ -114,17 +118,21 @@
 		$('#search-b').on('click', function (){
 		
 		
+			$.jStorage.set("selected-area", $('#dropdown').val());
+			
 			$('#box1').transition('scale', '1.5');
 			$('#middle-container').transition({
 				animation: 'scale',
 				duration : '2',
 				onComplete : function(){
 					
+
 					location.replace("AreaMenu.html");
 			
 				}
 				
 			})
+		
 		
 		});
 		
@@ -134,6 +142,9 @@
 		
 		
 	  </script>
+	  
+	  
+	
 	  
     </body>
   </html>
