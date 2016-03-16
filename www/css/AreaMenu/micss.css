@@ -1,8 +1,8 @@
 #testBColor{
 	background-color: green;
 }
-#testSize{
-	width:100%;
+.cardSize{
+	width:100% !important;
 }
 
 
