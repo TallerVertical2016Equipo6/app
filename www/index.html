@@ -51,26 +51,18 @@
 						  
 					</select>
 				
-				
-				</div>
-				<div id="changing-box2" class="ui center aligned segment"></a>
-						<a href="indexHorario.html"><div  class="ui button">
+              
+						<a href="indexHorario.html"><div id="buttonHorario" class="ui button">
 						<i class="calendar icon"></i>
 								<span class="text">Horario</span>
 						</div>
                         </a>
-                        
-                        
-                <div  class="ui floating dropdown labeled search icon button">
-					  <i class="search icon"></i>
-						   <span class="text">Seleccionar Area</span>
-								 <div class="menu" tabindex="-1">
-									<div class="item">Area A</div>
-									<div class="item">Area B</div>
-									<div class="item">Area C</div>
-								</div>
                 
-				    </div>
+				
+				</div>
+                
+                        
+                      
                 
                 
 				<div id="search-b" class="ui center aligned segment">
@@ -108,6 +100,7 @@
 				
 					$('#changing-box2').transition('fade up');
 					$('#search-b').transition('fade up');
+                    $('buttonHorario').transition('fade up');
 					}
 				})
 		});
@@ -154,7 +147,7 @@
 		
 		});
 		
-
+        $('buttonHorario').hide();
 		$('#changing-box2').hide();
 		$('#search-b').hide();
 		
