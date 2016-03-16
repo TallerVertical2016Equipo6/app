@@ -14,9 +14,9 @@
 
     <body>
 
-		<div class="ui two column center aligned grid">
+		<div class="ui one column center aligned grid">
 		  <div id="middle-container" class="column">
-				LOGO
+				<img src="img/logo.png">
 			</div>
 		</div>
 		
@@ -26,8 +26,10 @@
 			 <div class="fourteen wide column">
 				<div id = "box1" class="ui raised segment">
 								
+								
+					
 				<div id="changing-box" class="ui segment">
-							<!-- first form to b filled -->
+					<!-- first form to b filled -->		
 					<div class="two ui buttons">
 						<button id="visitant-b" class="ui button">Visitante 
 							<i class="user icon"></i>
@@ -40,9 +42,20 @@
 					
 				</div>
 					
+					
+				
+				
+				
 				<div id="changing-box2" class="ui center aligned segment">
+					<!-- second form to b filled -->		
 				
-				
+					<a href="indexHorario.html">
+						<div id="buttonHorario" class="ui button">
+							<i class="calendar icon"></i>
+									<span class="text">Horario</span>
+							</div>
+                    </a>
+                
 					<select id="dropdown" class="ui search dropdown">
 						  <option value="">Selecionar Area</option>
 						  <option value="A">Area A</option>
@@ -50,28 +63,9 @@
 						  <option value="C">Area C</option>
 						  
 					</select>
-				
-				
+					
 				</div>
-				<div id="changing-box2" class="ui center aligned segment"></a>
-						<a href="indexHorario.html"><div  class="ui button">
-						<i class="calendar icon"></i>
-								<span class="text">Horario</span>
-						</div>
-                        </a>
-                        
-                        
-                <div  class="ui floating dropdown labeled search icon button">
-					  <i class="search icon"></i>
-						   <span class="text">Seleccionar Area</span>
-								 <div class="menu" tabindex="-1">
-									<div class="item">Area A</div>
-									<div class="item">Area B</div>
-									<div class="item">Area C</div>
-								</div>
-                
-				    </div>
-                
+
                 
 				<div id="search-b" class="ui center aligned segment">
 					 <button class="fluid ui red button">Buscar</button>
@@ -90,76 +84,7 @@
 	  <!-- Necesary for jstorage, keys are "user-type" and "selected area"-->
 	  <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
       <script src="https://raw.github.com/andris9/jStorage/master/jstorage.js"></script>
-	  
-	   <script>
-	  
-		$('.ui.search.dropdown').dropdown();
-		
-
-		$('#personal-b').on('click', function (){
-			
-			
-			$.jStorage.set("user-type", "alumni");
-			
-			$('#changing-box').transition({
-				animation	: 'scale',
-				duration	: '1s',
-				onComplete : function(){
-				
-					$('#changing-box2').transition('fade up');
-					$('#search-b').transition('fade up');
-					}
-				})
-		});
-		
-		
-		$('#visitant-b').on('click', function (){
-		
-			$.jStorage.set("user-type", "visitante");
-			
-			$('#box1').transition('scale', '1.5');
-			$('#middle-container').transition({
-				animation: 'scale',
-				duration : '2',
-				onComplete : function(){
-					
-					location.replace("AreaMenu.html");
-			
-				}
-				
-			})
-		
-		});
-		
-		
-		
-		$('#search-b').on('click', function (){
-		
-		
-			$.jStorage.set("selected-area", $('#dropdown').val());
-			
-			$('#box1').transition('scale', '1.5');
-			$('#middle-container').transition({
-				animation: 'scale',
-				duration : '2',
-				onComplete : function(){
-					
-
-					location.replace("AreaMenu.html");
-			
-				}
-				
-			})
-		
-		
-		});
-		
-
-		$('#changing-box2').hide();
-		$('#search-b').hide();
-		
-		
-	  </script>
+	  <script type="text/javascript" src="js/main/mainmenu.js"></script>
 	  
 	  
 	
