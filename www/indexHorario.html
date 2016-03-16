@@ -4,7 +4,8 @@
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-      <script src="semantic/dist/semantic.min.js"></script>
+      <link rel="stylesheet" href="css/globalcss.css">
+    
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="dist/semantic.min.css"  media="screen,projection"/>
 
@@ -16,7 +17,17 @@
     </head>
 
     <body>
-
+      <div class="ui grid">
+          <div class="row topBar">
+            <div class="one wide column" id="backArrow">
+                <i class="chevron left icon"></i>
+            </div>
+            <div class="thirteen wide column"></div>
+            <div class="one wide column">
+                <i class="car icon"></i>
+            </div>
+          </div>
+      </div>
 		<div class="ui two column center aligned grid">
 		  <div id="middle-container" class="column">
 				LOGO
@@ -152,7 +163,7 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="dist/semantic.min.js"></script>
-
+      <script type="text/javascript" src="js/indexHorario/topBarIconLinks.js"></script>
 	  <script>
           $('.ui.dropdown')
             .dropdown()
