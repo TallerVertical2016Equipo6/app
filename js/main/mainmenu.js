@@ -2,13 +2,13 @@
 		$('.ui.search.dropdown').dropdown();
 		
 		
-		if($.jStorage.get("user-type") === null ){
+		//load json content 
+		//var localData = JSON.parse(localStorage.getItem(''));
+		
 			
 			$('#changing-box2').hide();
 			$('#search-b').hide();
 			
-		
-			alert("nothing");
 			$('#personal-b').on('click', function (){
 				
 				
@@ -35,7 +35,7 @@
 					duration : '2',
 					onComplete : function(){
 						
-						location.replace("AreaMenu.html");
+						location.replace("AreaMenu.html?area=" +('#dropdown').val() +"&userType=personal");
 				
 					}
 					
@@ -54,8 +54,8 @@
 					duration : '2',
 					onComplete : function(){
 						
-
-						location.replace("AreaMenu.html");
+						
+						location.replace("AreaMenu.html?userType=visitante&area=nulo");
 				
 					}
 					
@@ -63,35 +63,5 @@
 			
 			});
 			
-			
-				
-		
-		}else{
-
-
-		
-		
-			$('#changing-box').hide();
-				//skip to area and horario
-				$('#search-b').on('click', function (){
-				
-				
-					$.jStorage.set("selected-area", $('#dropdown').val());
-					
-					$('#box1').transition('scale', '1.5');
-					$('#middle-container').transition({
-						animation: 'scale',
-						duration : '2',
-						onComplete : function(){
-
-							location.replace("AreaMenu.html");
-					
-						}
-						
-					})
-				
-				
-			});
 		
 			
-		}

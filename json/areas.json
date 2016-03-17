@@ -1,0 +1,56 @@
+[
+		{
+			 "ID":"A", 
+			 "desc":"Entre la Biblioteca y el edificio 5.",
+			 "avaliable": 5, 
+			 "capacity":300, 
+			 "imgsrc" : "img/crop/recorteNaranja.png", 
+			 "neighbor" : ["A", "B"],
+			 "tipo" : "alumno"
+		 },
+		{
+			 "ID":"B", 
+			 "desc":"Atras del edificio de ingenieria",
+			 "avaliable": 67, 
+			 "capacity": 230, 
+			 "imgsrc" : "img/crop/recorteAulasV.png", 
+			 "neighbor" : ["C", "A"],
+			 "tipo" : "visitante"
+		 },
+		{
+			 "ID":"C", 
+			 "desc":"Entre residencias y edificio 6",
+			 "avaliable": 90, 
+			 "capacity": 212, 
+			 "imgsrc" : "img/crop/recorteAulasVI.png", 
+			 "neighbor" : ["B", "D"],
+			 "tipo" : "alumno"
+		 },
+		{
+			 "ID":"D", 
+			 "desc":"Entre el CDA y el Edificio de Ingenieria Civil",
+			 "avaliable": 100, 
+			 "capacity": 310, 
+			 "imgsrc" : "img/crop/recorteMorada.png", 
+			  "neighbor" : ["C", "E"],
+			 "tipo" : "alumno"
+		 },
+		 {
+			 "ID":"E", 
+			 "desc":"Entre la Biblioteca y el edificio 5.",
+			 "avaliable": 5, 
+			 "capacity":300, 
+			 "imgsrc" : "img/crop/recorteNaranja.png", 
+			  "neighbor" : ["D", "F"],
+			 "tipo" : "alumno"
+		 },
+		{
+			 "ID":"F", 
+			 "desc":"Atras del edificio de ingenieria",
+			 "avaliable": 1, 
+			 "capacity": 340, 
+			 "imgsrc" : "img/crop/recorteAzul.png", 
+			  "neighbor" : ["E"],
+			 "tipo" : "alumno"
+		 }
+]
