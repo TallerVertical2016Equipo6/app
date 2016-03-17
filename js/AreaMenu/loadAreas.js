@@ -1,5 +1,5 @@
 //hacer arreglo y cargar todas las zonas
-var containerCars = document.getElementById("containerCars");
+var containerCars = document.getElementById("containerCards");
 var areas = ["A", "B"];
 
 function loadAreas(userType , area){
@@ -10,7 +10,7 @@ function loadAreas(userType , area){
 			//desplegar todas las areas en orden indistinto
 		}else{
 			var chosenArea = area;
-			
+
 		}
 
 	}
