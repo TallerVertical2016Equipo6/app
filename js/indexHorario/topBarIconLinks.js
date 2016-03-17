@@ -6,5 +6,8 @@ $(document).ready(function(){
 	$("#backArrow").click(function(){
 		$(location).attr('href','index.html');
 	});
-	
+    
+    $('.ui.dropdown')
+        .dropdown()
+    ;	
 });
