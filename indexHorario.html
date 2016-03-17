@@ -3,7 +3,7 @@
     <head>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+      <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
       <link rel="stylesheet" href="css/globalcss.css">
     
       <!--Import materialize.css-->
@@ -11,117 +11,90 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-	 
 	  
 	  <link rel="stylesheet" type="text/css" href="css/index/index.css">
     </head>
 
     <body>
-
       <div class="ui grid">
-			<!--topbar-->
+        <!--topbar-->
         <div  class="ui blue top fixed inverted menu">
 			<div class="item" id="backArrow">
 				<i class="chevron left icon"></i>
-			</div>
-				
+			</div>	
 		</div>	
       </div>
 		
 	   <h2 class="ui center aligned icon header" style="padding-top:60px">
             <i class="circular calendar icon"></i>
             Seleccionar la Zona
-            </h2>
+       </h2>
             
        <center>  
-                   
            <strong>Mon:</strong>
-        
-				<select class="ui dropdown">
+		    <select id="monHorario" class="ui dropdown">
 			  <option value="">Area</option>
 			  <option value="A">Area A</option>
 			  <option value="B">Area B</option>
 			  <option value="C">Area C</option>
-				</select>
-            
-                                </center>
-                                <br>
-                                
-                                         
+			</select>
+      </center>
+      <br>
+                                                                   
         <center>  
-            
             <strong>Tue:</strong>
-            
-				<select class="ui dropdown">
+			<select class="ui dropdown">
 			  <option value="">Area</option>
 			  <option value="A">Area A</option>
 			  <option value="B">Area B</option>
 			  <option value="C">Area C</option>
-				</select>
-            
-                                </center>
-                                <br>
+			</select>
+        </center>
+        <br>
 
         <center>  
-            
             <strong>Wed:</strong>
-            
-				<select class="ui dropdown">
+			<select class="ui dropdown">
 			  <option value="">Area</option>
 			  <option value="A">Area A</option>
 			  <option value="B">Area B</option>
 			  <option value="C">Area C</option>
 			</select>
-            
-                                </center>
-                                <br>
+         </center>
+         <br>
                                 
-                                        <center>  
-            
+        <center>  
             <strong>Thu:</strong>
-            
 				<select class="ui dropdown">
 			  <option value="">Area</option>
 			  <option value="A">Area A</option>
 			  <option value="B">Area B</option>
 			  <option value="C">Area C</option>
 			</select>
-            
-                                </center>
-                                <br>
+          </center>
+          <br>
                                 
-                                        <center>  
-            
+          <center>  
             <strong>Fri:</strong>
-            
-				<select class="ui dropdown">
+			<select class="ui dropdown">
 			  <option value="">Area</option>
 			  <option value="A">Area A</option>
 			  <option value="B">Area B</option>
 			  <option value="C">Area C</option>
 			</select>
-            
-                                </center>
-                                <br>
+           </center>
+           <br>
                                 
-                                <center>
-                                    <a href="index.html"><button class="ui inverted blue button">Done</button>
-                                    </a>
-                                    </center>
+           <center>
+            <a href="index.html">
+                <button class="ui inverted blue button">Done</button>
+            </a>
+           </center>
     
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="dist/semantic.min.js"></script>
-      <script type="text/javascript" src="js/indexHorario/topBarIconLinks.js"></script>
-	  <script>
-          $('.ui.dropdown')
-            .dropdown()
-            ;
-      
-       </script>
-      
-      
-      
+      <script type="text/javascript" src="js/indexHorario/topBarIconLinks.js"></script> 
     </body>
   </html>
             

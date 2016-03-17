@@ -6,5 +6,14 @@ $(document).ready(function(){
 	$("#backArrow").click(function(){
 		$(location).attr('href','index.html');
 	});
-	
-});
+    
+    // inicia el dropdown 
+    $('.ui.dropdown')
+        .dropdown()
+    ;	
+    
+   /*$('#monHorario')
+    .dropdown('set value', "B")
+    ;*/
+    console.log("hola");
+});			
