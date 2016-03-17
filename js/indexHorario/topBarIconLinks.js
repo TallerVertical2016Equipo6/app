@@ -7,7 +7,31 @@ $(document).ready(function(){
 		$(location).attr('href','index.html');
 	});
     
-    $('.ui.dropdown')
-        .dropdown()
-    ;	
-});
+    // inicia el dropdown 
+    //$('.ui.dropdown')
+      //  .dropdown()
+    //;	
+    
+    
+   /*$('#monHorario')
+     .dropdown('set text', function(){
+        $.jStorage.get('monday')
+     })
+    ;*/
+    
+    $('#monHorario')
+     .dropdown('set text','B')
+    ;
+    
+        
+    //Funcion para boton 
+    $('#done').on('click', function(){
+        console.log(
+            $('#monHorario')
+             .dropdown('get value', "#monHorario"
+            )
+        );
+        console.log("hola");   
+    })
+    
+});			
