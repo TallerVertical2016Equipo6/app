@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="http://antoniohernandez.me:8000/socket.io/socket.io.js"></script>
+	<script>
+		var socket = io('http://antoniohernandez.me:8000/client');
+
+		socket.on('initialize', function(areas){
+			document.write('Initial Data');
+			document.write(JSON.stringify(areas));
+		});
+		
+		socket.on('signal', function(data){
+			document.write('Signal' + '<br>');
+			document.write(JSON.stringify(data) + '<br>');
+		});
+	</script>
+</body>
+</html>

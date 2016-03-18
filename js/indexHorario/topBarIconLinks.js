@@ -8,12 +8,42 @@ $(document).ready(function(){
 	});
     
     // inicia el dropdown 
-    $('.ui.dropdown')
-        .dropdown()
-    ;	
+    //$('.ui.dropdown')
+      //  .dropdown()
+    //;	
     
-   /*$('#monHorario')
-    .dropdown('set value', "B")
+    
+    
+    $('#monHorario')
+     .dropdown('set value',"B")
+    ;
+    
+      $('#tueHorario')
+     .dropdown('set value',"B")
+    ;
+      $('#wedHorario')
+     .dropdown('set value',"B")
+    ;
+      $('#thuHorario')
+     .dropdown('set value',"B")
+    ;
+      $('#friHorario')
+     .dropdown('set value',"B")
+    ;
+    
+  /*  $('#tueHorario')
+    .dropdown('set value',function(){
+        $.jStorage.set('monday')
+    })
     ;*/
-    console.log("hola");
+        
+    //Funcion para boton 
+    $('#done').on('click', function(){
+        console.log(
+            $('#monHorario')
+             .dropdown('get value', "#monHorario"
+            )
+        );  
+    })
+    
 });			

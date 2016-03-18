@@ -43,7 +43,7 @@
                                                                    
         <center>  
             <strong>Tue:</strong>
-			<select class="ui dropdown">
+			<select id="tueHorario" class="ui dropdown">
 			  <option value="">Area</option>
 			  <option value="A">Area A</option>
 			  <option value="B">Area B</option>
@@ -54,7 +54,7 @@
 
         <center>  
             <strong>Wed:</strong>
-			<select class="ui dropdown">
+			<select id="wedHorario" class="ui dropdown">
 			  <option value="">Area</option>
 			  <option value="A">Area A</option>
 			  <option value="B">Area B</option>
@@ -65,7 +65,7 @@
                                 
         <center>  
             <strong>Thu:</strong>
-				<select class="ui dropdown">
+				<select id="thuHorario" class="ui dropdown">
 			  <option value="">Area</option>
 			  <option value="A">Area A</option>
 			  <option value="B">Area B</option>
@@ -76,7 +76,7 @@
                                 
           <center>  
             <strong>Fri:</strong>
-			<select class="ui dropdown">
+			<select id="friHorario" class="ui dropdown">
 			  <option value="">Area</option>
 			  <option value="A">Area A</option>
 			  <option value="B">Area B</option>
@@ -86,11 +86,15 @@
            <br>
                                 
            <center>
-            <a href="index.html">
-                <button class="ui inverted blue button">Done</button>
-            </a>
+        <!--borre el link-->
+                <button id="done" class="ui inverted blue button">Done</button>
            </center>
-    
+        
+      <!-- Necesary for jstorage, keys are "monday" through "friday"-->
+	  <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+      <script src="https://raw.github.com/andris9/jStorage/master/jstorage.js"></script>
+	 
+     
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="dist/semantic.min.js"></script>
