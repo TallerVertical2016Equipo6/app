@@ -38,20 +38,8 @@ Test were made on a small model, which has design of a parking lot, ...
 
 ## License
 Intel
-
 ## Contributors
 Every person on the team is a System Engineer from Tecnológico de Monterrey Campus Guadalajara.
-Eric Mendoza Ruiz
-Antonio Hernández Campos
-Gabriel Aviles Robles
-Kimberly Luna
-Alejandro Vázquez
-Hyuntae Kim ← puto 
-Kevin Cabrera Navarro
-Carmina Pérez Guerrero
-Juan Pablo Ramírez
-Mario Carrillo Ruíz
-Santiago Kelley
 ![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10342786_889637921046588_4462504174306969790_n.jpg "Logo Title Text 1")
 ![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/12417798_1014864181905260_5778604783662858890_n.jpg "Logo Title Text 1")
 ![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/11071733_10153349224184343_2836909521888798762_n.jpg "Logo Title Text 1")
@@ -64,3 +52,14 @@ Santiago Kelley
 ![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10419485_10203977231495752_2804206238947742163_n.jpg "Logo Title Text 1")
 ![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/12119080_10207294279013796_4703484333623493824_n.jpg "Logo Title Text 1")
 ![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10177525_749995031698853_7924283870271118132_n.jpg "Logo Title Text 1")
+- Eric Mendoza Ruiz
+- Antonio Hernández Campos
+- Gabriel Aviles Robles
+- Kimberly Luna
+- Alejandro Vázquez
+- Hyuntae Kim
+- Kevin Cabrera Navarro
+- Carmina Pérez Guerrero
+- Juan Pablo Ramírez
+- Mario Carrillo Ruíz
+- Santiago Kelley
