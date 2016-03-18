@@ -46,11 +46,11 @@ $(document).ready(function(){
 							
 					
 					}else{
-							$('#0Horario').dropdown("setup menu");
-							$('#1Horario').dropdown("setup menu");
-							$('#2Horario').dropdown("setup menu");
-							$('#3Horario').dropdown("setup menu");
-							$('#4Horario').dropdown("setup menu");
+							$('#0Horario').dropdown();
+							$('#1Horario').dropdown();
+							$('#2Horario').dropdown();
+							$('#3Horario').dropdown();
+							$('#4Horario').dropdown();
 					}
 								
 				

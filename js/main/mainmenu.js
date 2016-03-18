@@ -62,7 +62,7 @@
 					onComplete : function(){
 						
 						if($('#dropdown').val() == ""){
-							location.replace("AreaMenu.html?area=" +"null" +"&userType=personal");
+							location.replace("AreaMenu.html?area=" +"nulo" +"&userType=personal");
 						}else{
 							location.replace("AreaMenu.html?area=" +$('#dropdown').val() +"&userType=personal");
 						}
