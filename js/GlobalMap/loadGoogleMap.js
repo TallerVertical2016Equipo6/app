@@ -1,5 +1,8 @@
-var socket = io('http://antoniohernandez.me:8000/client');
+//this script is used for the googple maps in global map
 
+
+var socket = io('http://antoniohernandez.me:8000/client');
+//get the center of the map from all polygons
 function getCenterMap(areas){
     var maxLat, minLat, maxLng, minLng;
         maxLat = areas[0].coordinates[0].lat;
@@ -38,6 +41,7 @@ function getColor(area){
         return "#FF0000";
     }
 }
+//initializing the google map
 var arrayOfPolygons;
 var areasGlobal;
 function initialize(centerMap, areas) {
@@ -72,7 +76,7 @@ function initialize(centerMap, areas) {
 
       }
 
-
+//when the availability changes we check if the color needs to change too.
 function changeColor(data){
     for(var i = 0; i < areasGlobal.length; i++){
         if(areasGlobal[i].area === data.area){
@@ -81,6 +85,7 @@ function changeColor(data){
         }
     }
 }
+//main method
 $(document).ready(function(){
     socket.on('initialize', function(areas){
         var center = getCenterMap(areas);

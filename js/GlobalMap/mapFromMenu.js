@@ -1,3 +1,4 @@
+//a piece of code made to test this function.
 //catching parameters from url
 function GetURLParameter(sParam){
 	var sPageURL = window.location.search.substring(1);

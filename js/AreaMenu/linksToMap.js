@@ -1,9 +1,10 @@
+//This script sets the links to all the list of maps in the menu
 function setClick(areaId, card){
 	$(card).click(function(){
 		$(location).attr('href', 'AreaMapa.html?map=' + areaId);
 	});
 }
-//links al mapa
+//links to map
 function setLinks(areasAvailable){
 	//console.log("ready");
 	var card;
@@ -19,19 +20,4 @@ function setLinks(areasAvailable){
 		
 	}
 }
-	/*$("#A").click(function(){
-		console.log("ready");
-		$(location).attr('href','AreaMapa.html?map=A');
-	});
-	$("#B").click(function(){
-		$(location).attr('href','AreaMapa.html?map=B');
-	});
-	$("#C").click(function(){
-		$(location).attr('href','AreaMapa.html?map=C');
-	});
-	$("#D").click(function(){
-		$(location).attr('href','AreaMapa.html?map=D');
-	});
-	$("#E").click(function(){
-		$(location).attr('href','AreaMapa.html?map=E');
-	});*/
+	

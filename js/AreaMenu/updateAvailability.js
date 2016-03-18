@@ -1,4 +1,4 @@
-
+//this function listens to anything that the edison does and updates the information
 
 $(document).ready(function(){
 	socket.on('signal', function(data){
