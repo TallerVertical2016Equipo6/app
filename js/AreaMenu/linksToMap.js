@@ -1,7 +1,24 @@
+function setClick(areaId, card){
+	$(card).click(function(){
+		$(location).attr('href', 'AreaMapa.html?map=' + areaId);
+	});
+}
 //links al mapa
-$(document).ready(function(){
+function setLinks(areasAvailable){
 	//console.log("ready");
-	$("#A").click(function(){
+	var card;
+	var areaId;
+	for(var i = 0; i < areasAvailable.length; i++){
+		areaId = areasAvailable[i].area;
+		card = document.getElementById("link"+areaId);
+		//console.log(card);
+		if(card != null){
+			setClick(areaId, card);			
+		}
+		
+	}
+}
+	/*$("#A").click(function(){
 		console.log("ready");
 		$(location).attr('href','AreaMapa.html?map=A');
 	});
@@ -16,5 +33,4 @@ $(document).ready(function(){
 	});
 	$("#E").click(function(){
 		$(location).attr('href','AreaMapa.html?map=E');
-	});
-});
+	});*/
