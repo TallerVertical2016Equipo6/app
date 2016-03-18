@@ -2,11 +2,7 @@
   <html>
     <head>
      
-      <link rel="stylesheet" href="css/AreaMapa/sizeCard.css">
-      <link rel="stylesheet" href="css/globalcss.css">
 
-   
-     
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
       <!--Import materialize.css-->
@@ -14,8 +10,6 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	  
-	  <script src="http://antoniohernandez.me:8000/socket.io/socket.io.js"></script>
 	
 	  <!-- google maps library-->
 	  <script type="text/javascript"
@@ -26,10 +20,7 @@
 		#map_canvas { height: 100% }
 	  </style>
 	 
-	 
-	  <script type="text/javascript" src="js/GlobalMap/mapFromMenu.js"></script>
-	  <script type="text/javascript" src="js/AreaMapa/pfromindex.js"></script>
-
+	
 
     </head  >
 
@@ -74,7 +65,7 @@
                   
                     <div class="extra content">
                       <a><i class="car icon" ></i>
-                          <span class="color" id="avali">dss </span>
+                          <span class="color" id="avali">0 Avaliable lots </span>
                       </a>
                     </div>
                 </div>
@@ -82,11 +73,20 @@
         </div>
     </div>
         
-	     
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	  <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
+	  <script src="http://antoniohernandez.me:8000/socket.io/socket.io.js"></script>
+	
       <script type="text/javascript" src="dist/semantic.min.js"></script>
       <script type="text/javascript" src="js/AreaMapa/topBarIconLinks.js"></script>
+	  
+      <link rel="stylesheet" href="css/AreaMapa/sizeCard.css">
+      <link rel="stylesheet" href="css/globalcss.css">
+	   
+	  <script type="text/javascript" src="js/GlobalMap/mapFromMenu.js"></script>
+	  <script type="text/javascript" src="js/AreaMapa/pfromindex.js"></script>
+
+     
 	  
 	 
   </body>

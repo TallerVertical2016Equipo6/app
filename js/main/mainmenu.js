@@ -2,17 +2,24 @@
 		$('.ui.search.dropdown').dropdown();
 		
 		
-		//load json content 
-		//var localData = JSON.parse(localStorage.getItem(''));
-		
+	
+			
 			
 			$('#changing-box2').hide();
 			$('#search-b').hide();
 			
+			
+			/*
+			
+			BUTTON FUNCTIONS
+			---------------------
+			unleash the next menu and store user prefs on url
+			
+			*/
+			
+			//Enter aplication as a student
 			$('#personal-b').on('click', function (){
 				
-				
-				$.jStorage.set("user-type", "alumni");
 				
 				$('#changing-box').transition({
 					animation	: 'scale',
@@ -26,7 +33,7 @@
 					})
 			});
 			
-			
+			//Enter aplication as a visitant
 			$('#visitant-b').on('click', function (){
 			
 				$('#box1').transition('scale', '1.5');
@@ -43,6 +50,7 @@
 			});
 			
 			
+			//Selects area and makes the area search
 			$('#search-b').on('click', function (){
 			
 				$.jStorage.set("selected-area", $('#dropdown').val());

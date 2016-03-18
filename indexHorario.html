@@ -13,6 +13,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 	  
 	  <link rel="stylesheet" type="text/css" href="css/index/index.css">
+	  
     </head>
 
     <body>
@@ -27,60 +28,44 @@
 
 	   <h2 class="ui center aligned icon header" style="padding-top:60px">
             <i class="circular calendar icon"></i>
-            Seleccionar la Zona
+            Select the Area
        </h2>
             
        <center>  
            <strong>Mon:</strong>
-		    <select id="monHorario" class="ui dropdown">
-			  <option value="">Area</option>
-			  <option value="A">Area A</option>
-			  <option value="B">Area B</option>
-			  <option value="C">Area C</option>
+		    <select id="0Horario" class="ui dropdown">
+		
 			</select>
       </center>
       <br>
                                                                    
         <center>  
             <strong>Tue:</strong>
-			<select id="tueHorario" class="ui dropdown">
-			  <option value="">Area</option>
-			  <option value="A">Area A</option>
-			  <option value="B">Area B</option>
-			  <option value="C">Area C</option>
+			<select id="1Horario" class="ui dropdown">
 			</select>
         </center>
         <br>
 
         <center>  
             <strong>Wed:</strong>
-			<select id="wedHorario" class="ui dropdown">
-			  <option value="">Area</option>
-			  <option value="A">Area A</option>
-			  <option value="B">Area B</option>
-			  <option value="C">Area C</option>
+			<select id="2Horario" class="ui dropdown">
+			 
 			</select>
          </center>
          <br>
                                 
         <center>  
             <strong>Thu:</strong>
-				<select id="thuHorario" class="ui dropdown">
-			  <option value="">Area</option>
-			  <option value="A">Area A</option>
-			  <option value="B">Area B</option>
-			  <option value="C">Area C</option>
+				<select id="3Horario" class="ui dropdown">
+			
 			</select>
           </center>
           <br>
                                 
           <center>  
             <strong>Fri:</strong>
-			<select id="friHorario" class="ui dropdown">
-			  <option value="">Area</option>
-			  <option value="A">Area A</option>
-			  <option value="B">Area B</option>
-			  <option value="C">Area C</option>
+			<select id="4Horario" class="ui dropdown">
+			 
 			</select>
            </center>
            <br>
@@ -95,10 +80,14 @@
       <script src="https://raw.github.com/andris9/jStorage/master/jstorage.js"></script>
 	 
      
+	   <!--Server linkage-->
+	  <script src="http://antoniohernandez.me:8000/socket.io/socket.io.js"></script>
+	  
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="dist/semantic.min.js"></script>
       <script type="text/javascript" src="js/indexHorario/topBarIconLinks.js"></script> 
+	  
     </body>
   </html>
             
