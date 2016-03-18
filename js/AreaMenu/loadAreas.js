@@ -103,10 +103,13 @@ function loadAreas(userType , area){
 		}else{
 			//desplegar las areas con prioridad, ahorita como el input de ejemplo no nos dice que zonas son vecinas, solo indicaremos hasta arriba la zona escojida y despues se desplegaran las demas
 			var selectedArea;
+
 			for(var i = 0; i < areasAvailable.length; i++){
-				if(areasAvailable[i].area = area){
+				if(areasAvailable[i].area === area){
 					selectedArea = areasAvailable[i];
+					
 					areasAvailable.splice(i, 1);
+					
 					break;
 				}
 			}
@@ -114,7 +117,7 @@ function loadAreas(userType , area){
 			for(var i = 0; i < areasAvailable.length; i++){
 				containerCards.innerHTML += returnRow(areasAvailable[i]);
 			}
-
+			areasAvailable.push(selectedArea);
 		}
 
 	}

@@ -11,6 +11,7 @@ function setLinks(areasAvailable){
 	for(var i = 0; i < areasAvailable.length; i++){
 		areaId = areasAvailable[i].area;
 		card = document.getElementById("link"+areaId);
+		console.log(card);
 		//console.log(card);
 		if(card != null){
 			setClick(areaId, card);			
