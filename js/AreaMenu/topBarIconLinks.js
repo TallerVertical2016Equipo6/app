@@ -1,6 +1,6 @@
 //topBarIcon AreaMenu
 
-//links al mapa
+//links in topbar
 $(document).ready(function(){
 	//console.log("ready");
 

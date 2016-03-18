@@ -1,9 +1,10 @@
-//hacer arreglo y cargar todas las zonas
+//This script reads all areas from server and display each area in the list
+
 
 var socket = io('http://antoniohernandez.me:8000/client');
 
 
-//cargar las zonas del servidor
+//main method
 var areasAvailable;
 $(document).ready(function(){
 	socket.on('initialize', function(areas){
@@ -13,7 +14,7 @@ $(document).ready(function(){
 		setLinks(areasAvailable);
 	});
 });
-
+//function that returns the center of the map
 function getCenterPoly(PolygonArray){
 		var maxLat, minLat, maxLng, minLng;
 		maxLat = PolygonArray[0].lat;
@@ -40,6 +41,7 @@ function getCenterPoly(PolygonArray){
 		centerLng = (maxLng + minLng) /2;
 		return [centerLat, centerLng];
 }
+
 function getColor(area){
 	var percentage = area.availability / area.capacity;
 	if(percentage > 0.3){
@@ -58,6 +60,7 @@ function getPath(area){
 	}
 	return path;
 }
+// this function returns the html of a single element
 function returnRow(area){
 	var center = getCenterPoly(area.coordinates);
 	var path = getPath(area);
@@ -84,24 +87,25 @@ function returnRow(area){
               </div>
             </div>`;
 }
+//this will load all elements depending on the parameters of the search.
 function loadAreas(userType , area){
 	var containerCards = document.getElementById("containerCards");
 	containerCards.innerHTML = "";
 	if(userType === "visitante"){
-		//desplegar solo las zonas que son para visitantes
-		//por el momento va a desplegar toda la lista, ya que los datos de prueba no indican que zonas son para visitantes o para personal del tec
+		//Display zones only for visitors
+		//Right now we don't have implemented the visitor identifier, so we will just display all the list
 		for(var i = 0; i < areasAvailable.length; i++){
 			containerCards.innerHTML += returnRow(areasAvailable[i]);
 		}
 	}else{
 		if(area==="nulo"){
-			//desplegar todas las areas en orden indistinto
+			//This is for a student or teacher that doesn't input anything in search, so we will just display the whole list.
 			for(var i = 0; i < areasAvailable.length; i++){
 				containerCards.innerHTML += returnRow(areasAvailable[i]);
 			}
 
 		}else{
-			//desplegar las areas con prioridad, ahorita como el input de ejemplo no nos dice que zonas son vecinas, solo indicaremos hasta arriba la zona escojida y despues se desplegaran las demas
+			//This case is when there is something in the search and we prioritize to show what the user is looking for
 			var selectedArea;
 
 			for(var i = 0; i < areasAvailable.length; i++){
