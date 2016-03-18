@@ -39,11 +39,11 @@
 				<div id="changing-box" class="ui segment">
 					<!-- first form to b filled -->		
 					<div class="two ui buttons">
-						<button id="visitant-b" class="ui button">Visitante 
+						<button id="visitant-b" class="ui button">Visitant 
 							<i class="user icon"></i>
 						</button>
 						<button id="personal-b" class="ui button">
-							Personal 
+							Student / Professor 
 							<i class="student icon"></i>
 						</button>	
 					</div>
@@ -60,7 +60,7 @@
 					<a href="indexHorario.html">
 						<div id="buttonHorario" class="ui button">
 							<i class="calendar icon"></i>
-									<span class="text">Horario</span>
+									<span class="text">Schedule</span>
 							</div>
                     </a>
                 
@@ -72,7 +72,7 @@
 
                 
 				<div id="search-b" class="ui center aligned segment">
-					 <button class="fluid ui red button">Buscar</button>
+					 <button class="fluid ui red button">Search</button>
 				</div>
 				
 				</div>
@@ -92,16 +92,15 @@
 
 	  <script type="text/javascript">
 	  
-		
-		$(document).ready(function(){
+			
+			$(document).ready(function(){
 			
 			/*
 			
-			---------------------
 			INITIALIZE FUNCTION
 			---------------------
-			
-			
+			Function that catches socket io message and dynamically 
+			fills the dropdown with the received values
 			
 			*/
 			

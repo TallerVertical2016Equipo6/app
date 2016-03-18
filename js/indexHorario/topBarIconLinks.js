@@ -5,28 +5,15 @@ $(document).ready(function(){
 
    	
 	
-	//
-				
-	$('.ui.search.dropdown').dropdown();
-		
-        
+	/*
 	
-	if(localStorage.getItem("cal")){
-		
-		
-		 var storedNames = JSON.parse(localStorage.getItem("cal"));
-		 console.log(storedNames[0]);
-		 
-		
-		 
-			$('#0Horario').dropdown('set selected', storedNames[0]);
-			$('#1Horario').dropdown('set selected', storedNames[1]);
-			$('#2Horario').dropdown('set selected', storedNames[2]);
-		    $('#3Horario').dropdown('set selected', storedNames[3]);
-			$('#4Horario').dropdown('set selected', storedNames[4]);
+	Initialize function
+	-------------------
 	
-	}
-    
+	initializes dropdowns from packet initialize through 
+	the socket and loads the data from a json stored in local storage
+	
+	*/
     var socket = io('http://antoniohernandez.me:8000/client');
 	var str = "<option value=\"" +"" +"\">Select Area</option>";
 			
@@ -43,12 +30,32 @@ $(document).ready(function(){
 					document.getElementById("3Horario").innerHTML = str;
 					document.getElementById("4Horario").innerHTML = str;
 					
-					$('#0Horario').dropdown("setup menu");
-					$('#1Horario').dropdown("setup menu");
-					$('#2Horario').dropdown("setup menu");
-					$('#3Horario').dropdown("setup menu");
-					$('#4Horario').dropdown("setup menu");
+
+						
+					if(localStorage.getItem("cal")){
+						
+						
+						 var storedNames = JSON.parse(localStorage.getItem("cal"));
+	
+						
+							$('#0Horario').dropdown('set selected', storedNames[0]);
+							$('#1Horario').dropdown('set selected', storedNames[1]);
+							$('#2Horario').dropdown('set selected', storedNames[2]);
+							$('#3Horario').dropdown('set selected', storedNames[3]);
+							$('#4Horario').dropdown('set selected', storedNames[4]);
+							
 					
+					}else{
+							$('#0Horario').dropdown("setup menu");
+							$('#1Horario').dropdown("setup menu");
+							$('#2Horario').dropdown("setup menu");
+							$('#3Horario').dropdown("setup menu");
+							$('#4Horario').dropdown("setup menu");
+					}
+								
+				
+					  //  $('.ui.search.dropdown').dropdown();
+
 					
 	});
 			
@@ -84,7 +91,7 @@ $(document).ready(function(){
 		
 		
 		
-		//alert(window.history.previous.href);
+		//storage;
 		localStorage.setItem("cal", JSON.stringify(calendar));
 		
 		
