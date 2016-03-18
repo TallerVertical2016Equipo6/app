@@ -2,11 +2,12 @@
 <p align="center">
   <img src = "https://github.com/TallerVertical2016Equipo6/app/blob/master/img/splashScreen.png"/>
 </p>
+
 ==============
 # Documentation
 ## Synopsis
 This project was conceived by Students of Tecnológico de Monterrey Campus Guadalajara in collaboration with Intel, it is focused on smart parking, the students should implement an app that helps users to find available parking lot, unable to get to their class on time, which will help people to interconnect and integrate emerging technology into their daily activities.
-##Screenshots of our web page:
+##Screenshots of the Application:
 -Splash screen of the web application, first interaction with the user
 ![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/e1c4d930f9490132d8e72ade19c4768a404f5ab1/img/스크린샷%202016-03-17%20오후%2011.10.22.png "Logo Title Text 1")
 -Menu page, where the type of user can be choosed
@@ -24,21 +25,23 @@ In this modern ages, wasting time, affects strongly to individuals, and it has l
 in order to use our application, Pocket Park, the user has to download our repository from Github link, and the download link is: https://github.com/TallerVertical2016Equipo6. _Important_ Right now it is only compatible on android devices.
 
 ## API Reference
+
 ###localStorage
 
 localStorage was used in order to save information directly, localStorage is supported on the web browser. Data is written in an array that stores itself in a JSON file.
-```
-###jQuery
-```
 
-```
+###jQuery
+
+
+
 ###Semantic
-```
+
 <script type="text/javascript" src="dist/semantic.min.js"></script>
-```
-Semantic is a framework that helps programmers to simplify the design and the structure.
+
+Semantic ui was the framework chosen because its simplicity and smooth components
+
 ###Json
-```
+```JSON
 [
 		{
 			 "ID":"A", 
@@ -49,15 +52,15 @@ Semantic is a framework that helps programmers to simplify the design and the st
 			 "neighbor" : ["A", "B"],
 			 "tipo" : "alumno"
 		 },
-
 ```
-Where ```ID```is the identifier of the parking lot area.
+
 ## Tests
 Test were made on a small model, design of a parking lot, which has sensor in order to recognize how many spots it has for each zone, and how many spots are available on specific zone that user wants to know.
 
 
 ## Demo
 
+[PocketPark v1.0 - Demo](https://www.youtube.com/watch?v=gd-POOuH49A&feature=youtu.be)
 
 
 ## License
