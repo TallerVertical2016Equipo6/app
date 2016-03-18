@@ -65,7 +65,7 @@
                     </a>
                 
 					<select id="dropdown" class="ui search dropdown">
-			
+						<option value="">Select Area</option>
 					</select>
 					
 				</div>
@@ -86,9 +86,8 @@
       <script src="https://raw.github.com/andris9/jStorage/master/jstorage.js"></script>
 	  <script type="text/javascript" src="js/main/mainmenu.js"></script>
 	
-	  <!--json script-->
-		
-		
+	  <!-- JSON script-->
+	
 	  <script src="http://antoniohernandez.me:8000/socket.io/socket.io.js"></script>
 
 	  <script type="text/javascript">
@@ -107,14 +106,12 @@
 			*/
 			
 			var socket = io('http://antoniohernandez.me:8000/client');
-			var str = " <option value=\"" +"nulo" +"\">Selecionar Area</option>";
+			var str = " <option value=\"" +"" +"\">Select Area</option>";
 			
 			socket.on('initialize', function(areas){
 											
 					$.each(areas, function(i,field){		
 							str +=  "<option value= \"" +field.area +"\" > Area " +field.area +"</option>";
-							alert(str);
-							
 					});
 					
 					document.getElementById("dropdown").innerHTML = str;
