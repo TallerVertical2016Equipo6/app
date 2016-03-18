@@ -53,7 +53,7 @@
 			//Selects area and makes the area search
 			$('#search-b').on('click', function (){
 			
-				$.jStorage.set("selected-area", $('#dropdown').val());
+				//$.jStorage.set("selected-area", $('#dropdown').val());
 				
 				$('#box1').transition('scale', '1.5');
 				$('#middle-container').transition({
