@@ -6,7 +6,7 @@
       <link rel="stylesheet" href="css/globalcss.css">
 
    
-      <script type="text/javascript" src="js/GlobalMap/mapFromMenu.js"></script>
+     
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
       <!--Import materialize.css-->
@@ -15,14 +15,26 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	  
+	  <script src="http://antoniohernandez.me:8000/socket.io/socket.io.js"></script>
+	
 	  <!-- google maps library-->
+	  <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCJuoajKK5fBQk1OD54Nv0c-fDv2mUgR-0&sensor=true">
+	  </script>
 	  
-	<script src="http://maps.googleapis.com/maps/api/js"></script>		
-	  
-    </head>
+	  <style type="text/css">
+		#map_canvas { height: 100% }
+	  </style>
+	 
+	 
+	  <script type="text/javascript" src="js/GlobalMap/mapFromMenu.js"></script>
+	  <script type="text/javascript" src="js/AreaMapa/pfromindex.js"></script>
 
 
-    <body> 
+    </head  >
+
+
+    <body onload = "initialize()"> 
       <div class="ui grid">
 			<!--topbar-->
           <div  class="ui blue top fixed inverted menu">
@@ -43,23 +55,26 @@
             <div class="sixteen wide column">
                 
 				<div class="ui card" id="max">
-                    <div class="container" id="googleMapContainer" >
-						<!--map container-->
-			
+				
+					<!--google maps container-->
+                    <div class="ui container" style="width:100%; height: 420px">
+					
+						<div style="width:100%; height: 100%" id="map_canvas"> </div>
+						
                     </div>
                 
                     <div class="content">
-                      <a class="header">Zone Biblioteca</a>
+                      <a class="header" id="name">Zone Biblioteca</a>
                       <div class="meta">
                       </div>
-                      <div class="description">
+                      <div class="description" id="desc">
                           This zone is near to Hyuntae's ping pong club'
                       </div>
                     </div>
                   
                     <div class="extra content">
-                      <a><i class="car icon"></i>
-                          <span id="color">10 available</span>
+                      <a><i class="car icon" ></i>
+                          <span class="color" id="avali">dss </span>
                       </a>
                     </div>
                 </div>
@@ -73,18 +88,6 @@
       <script type="text/javascript" src="dist/semantic.min.js"></script>
       <script type="text/javascript" src="js/AreaMapa/topBarIconLinks.js"></script>
 	  
-	  <script type = "text/javascript">
-	  
-		var mapProp = {
-			  center:new google.maps.LatLng(51.508742, -0.120850),
-			  zoom: 7,
-			  mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-		
-		
-		var map=new google.maps.Map(document.getElementById("googleMapContainer"), mapProp);
-		google.maps.event.addDomListener(window, 'load', initialize); 
-	  </script>
-	  
+	 
   </body>
   </html>

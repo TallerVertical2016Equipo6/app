@@ -52,8 +52,12 @@
 					animation: 'scale',
 					duration : '2',
 					onComplete : function(){
-						location.replace("AreaMenu.html?area=" +$('#dropdown').val() +"&userType=personal");
-				
+						
+						if($('#dropdown').val() == ""){
+							location.replace("AreaMenu.html?area=" +"null" +"&userType=personal");
+						}else{
+							location.replace("AreaMenu.html?area=" +$('#dropdown').val() +"&userType=personal");
+						}
 					}
 					
 				})
