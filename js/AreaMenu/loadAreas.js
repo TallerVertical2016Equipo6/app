@@ -10,6 +10,7 @@ $(document).ready(function(){
 		
 		areasAvailable = areas;
 		loadAreas(userType, area);
+		setLinks(areasAvailable);
 	});
 });
 
@@ -17,7 +18,7 @@ $(document).ready(function(){
 function returnRow(area){
 	return `<div class="row">
               <div class="sixteen wide column">
-                  <div class="ui card cardSize">
+                  <div id="link`+ area.area +`" class="ui card cardSize">
                     <div class="image">
                       <img src="img/crop/recorteAmarillo.png" class="AreaMenuImg">
                     </div>
