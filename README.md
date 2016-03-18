@@ -1,4 +1,4 @@
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/splashScreen.png "Logo Title Text 1")
+![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/12874095_10208946591051114_943659871_o.jpg "Logo Title Text 1")
 # Pocket Park
 ==============
 # Documentation
@@ -36,33 +36,31 @@ Depending on the size of the project, if it is small and simple enough the refer
 ## Tests
 Test were made on a small model, which has design of a parking lot, ...
 
-## Contributors
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-
 ## License
 Intel
 
-## team
+## Contributors
+Every person on the team is a System Engineer from Tecnológico de Monterrey Campus Guadalajara.
 Eric Mendoza Ruiz
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10342786_889637921046588_4462504174306969790_n.jpg "Logo Title Text 1")
 Antonio Hernández Campos
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10342786_889637921046588_4462504174306969790_n.jpg "Logo Title Text 1")
 Gabriel Aviles Robles
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/11071733_10153349224184343_2836909521888798762_n.jpg "Logo Title Text 1")
 Kimberly Luna
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10929959_10205686505058141_3813456412421845557_n.jpg "Logo Title Text 1")
 Alejandro Vázquez
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/11226040_1663576473931713_8445980982616170311_n.jpg "Logo Title Text 1")
-Hyuntae Kim
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10342786_889637921046588_4462504174306969790_n.jpg "Logo Title Text 1")
+Hyuntae Kim ← puto 
 Kevin Cabrera Navarro
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/12191637_10207994142360492_4597568313062496862_n.jpg "Logo Title Text 1")
 Carmina Pérez Guerrero
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/11009157_964567533566961_2694741349464091904_n.jpg "Logo Title Text 1")
 Juan Pablo Ramírez
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10419485_10203977231495752_2804206238947742163_n.jpg "Logo Title Text 1")
 Mario Carrillo Ruíz
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/12119080_10207294279013796_4703484333623493824_n.jpg "Logo Title Text 1")
 Santiago Kelley
 ![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10342786_889637921046588_4462504174306969790_n.jpg "Logo Title Text 1")
+![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/12417798_1014864181905260_5778604783662858890_n.jpg "Logo Title Text 1")
+![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/11071733_10153349224184343_2836909521888798762_n.jpg "Logo Title Text 1")
+![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10929959_10205686505058141_3813456412421845557_n.jpg "Logo Title Text 1")
+
+![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/11226040_1663576473931713_8445980982616170311_n.jpg "Logo Title Text 1")
+![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/12644935_10204579443206531_6975694922071603219_n.jpg "Logo Title Text 1")
+![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/12191637_10207994142360492_4597568313062496862_n.jpg "Logo Title Text 1")
+![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/11009157_964567533566961_2694741349464091904_n.jpg "Logo Title Text 1")
+![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10419485_10203977231495752_2804206238947742163_n.jpg "Logo Title Text 1")
+![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/12119080_10207294279013796_4703484333623493824_n.jpg "Logo Title Text 1")
+![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/10177525_749995031698853_7924283870271118132_n.jpg "Logo Title Text 1")
