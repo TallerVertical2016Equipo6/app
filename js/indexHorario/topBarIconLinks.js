@@ -13,16 +13,29 @@ $(document).ready(function(){
     //;	
     
     
-   /*$('#monHorario')
-     .dropdown('set text', function(){
-        $.jStorage.get('monday')
-     })
-    ;*/
     
     $('#monHorario')
-     .dropdown('set text','B')
+     .dropdown('set value',"B")
     ;
     
+      $('#tueHorario')
+     .dropdown('set value',"B")
+    ;
+      $('#wedHorario')
+     .dropdown('set value',"B")
+    ;
+      $('#thuHorario')
+     .dropdown('set value',"B")
+    ;
+      $('#friHorario')
+     .dropdown('set value',"B")
+    ;
+    
+  /*  $('#tueHorario')
+    .dropdown('set value',function(){
+        $.jStorage.set('monday')
+    })
+    ;*/
         
     //Funcion para boton 
     $('#done').on('click', function(){
@@ -30,8 +43,7 @@ $(document).ready(function(){
             $('#monHorario')
              .dropdown('get value', "#monHorario"
             )
-        );
-        console.log("hola");   
+        );  
     })
     
 });			
