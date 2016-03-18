@@ -34,8 +34,7 @@
 					animation: 'scale',
 					duration : '2',
 					onComplete : function(){
-						
-						location.replace("AreaMenu.html?area=" +('#dropdown').val() +"&userType=personal");
+						location.replace("AreaMenu.html?userType=visitante&area=nulo");
 				
 					}
 					
@@ -53,9 +52,7 @@
 					animation: 'scale',
 					duration : '2',
 					onComplete : function(){
-						
-						
-						location.replace("AreaMenu.html?userType=visitante&area=nulo");
+						location.replace("AreaMenu.html?area=" +$('#dropdown').val() +"&userType=personal");
 				
 					}
 					
