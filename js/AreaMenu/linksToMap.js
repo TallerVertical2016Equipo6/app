@@ -1,15 +1,19 @@
+function setClick(areaId, card){
+	$(card).click(function(){
+		$(location).attr('href', 'AreaMapa.html?map=' + areaId);
+	});
+}
 //links al mapa
 function setLinks(areasAvailable){
 	//console.log("ready");
 	var card;
-	
+	var areaId;
 	for(var i = 0; i < areasAvailable.length; i++){
-		card = document.getElementById("link"+areasAvailable[i].area);
-		
+		areaId = areasAvailable[i].area;
+		card = document.getElementById("link"+areaId);
+		//console.log(card);
 		if(card != null){
-			$(card).click(function(){
-				$(location).attr('href', 'AreaMapa.html?map=' + areasAvailable[i].area);
-			});
+			setClick(areaId, card);			
 		}
 		
 	}
