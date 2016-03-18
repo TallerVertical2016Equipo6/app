@@ -13,5 +13,3 @@ function GetURLParameter(sParam){
 var userType = GetURLParameter('userType');
 var area = GetURLParameter('area');
 
-
-loadAreas(userType, area);
