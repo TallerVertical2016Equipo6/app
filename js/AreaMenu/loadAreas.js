@@ -117,7 +117,7 @@ function loadAreas(userType , area){
 			for(var i = 0; i < areasAvailable.length; i++){
 				containerCards.innerHTML += returnRow(areasAvailable[i]);
 			}
-
+			areasAvailable.push(selectedArea);
 		}
 
 	}

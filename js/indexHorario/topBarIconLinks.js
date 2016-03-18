@@ -2,10 +2,7 @@
 $(document).ready(function(){
 	
 	
-	//Return function
-	$("#backArrow").click(function(){
-		$(location).attr('href','index.html');
-	});
+
    	
 	
 	//

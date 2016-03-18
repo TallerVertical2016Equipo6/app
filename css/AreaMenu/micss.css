@@ -1,15 +1,13 @@
+/* Testing id to visualize the element */
 #testBColor{
 	background-color: green;
 }
+
+/*  Elements of list  */
 .cardSize{
 	width:100% !important;
 }
 
-
-/* images */
-.AreaMenuImg{
-
-}
 .colorBottomCard{
 	color:green;
 }
