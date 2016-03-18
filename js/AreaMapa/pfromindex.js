@@ -12,7 +12,7 @@ function GetURLParameter(sParam){
 	}
 }
 
-var area = GetURLParameter('area');
+var area = GetURLParameter('map');
 
 var map;
 	
@@ -47,42 +47,46 @@ $(document).ready(function(){
 						
 				
 						$.each(areas, function(i,field){		
-					
+							console.log(field.area +"ds" +area);
 							if(field.area == area){	
-							
+								
 								//extracts coordinates for the given area
 								var coord = field.coordinates;
 				
 								var center; 
 								center = getCenterPoly(coord);
-								
+
 								
 								$.each(coord, function(j,fild){
-									console.log(fild.lat);
 									poly[j] = new google.maps.LatLng(fild.lat, fild.lng);
 								
 								});
 								
 								
-								//console.log(center[0] +" " +center[1]);
+							
 								//Moves center to the new coordinates
 								map.panTo(new google.maps.LatLng(center[0], center[1]));
 						
 								document.getElementById("name").innerHTML = "Zona " +field.area;
 								document.getElementById("desc").innerHTML = field.description;
+								document.getElementById("avali").innerHTML = field.availability +" lots available";
+							
+								var color = getColor(field);
 								
 								//polygon preferences
 								 new_area = new google.maps.Polygon({
 									paths: poly,
-									strokeColor: "#FF9900",
+									strokeColor: color,
 									strokeOpacity: 0.8,
 									strokeWeight: 2,
-									fillColor: "#FF9900",
+									fillColor: color,
 									fillOpacity: 0.35
 								});
 						
 								//console.log(new_area);
+								
 								new_area.setMap(map);
+								
 								
 								//new_area.setOptions({strokeColor:"AA9308", fillColor:"AA9308"});
 									
