@@ -30,8 +30,8 @@ function getCenterPoly(PolygonArray){
 			if(PolygonArray[i].lng > maxLng){
 				maxLng = PolygonArray[i].lng;
 			}
-			if(PolygonArray[i].lng > maxLng){
-				maxLng = PolygonArray[i].lng;
+			if(PolygonArray[i].lng < minLng){
+				minLng = PolygonArray[i].lng;
 			}
 		}
 

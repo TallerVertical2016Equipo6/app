@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="dist/semantic.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/GlobalMap/micss.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/globalcss.css">
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCJuoajKK5fBQk1OD54Nv0c-fDv2mUgR-0">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var myOptions = {
+          center: new google.maps.LatLng(20.734100, -103.455009),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            myOptions);
+
+        var areaA = [
+            new google.maps.LatLng(20.732034, -103.454478),
+            new google.maps.LatLng(20.732004, -103.453941),
+            new google.maps.LatLng(20.733255, -103.453716),
+            new google.maps.LatLng(20.733315, -103.454373)
+        ];
+
+        var areaB = [
+            new google.maps.LatLng(20.733357, -103.454370),
+            new google.maps.LatLng(20.733295, -103.453707),
+            new google.maps.LatLng(20.734648, -103.453501),
+            new google.maps.LatLng(20.734706, -103.454242)
+        ];
+
+        var areaC = [
+            new google.maps.LatLng(20.734745, -103.454238),
+            new google.maps.LatLng(20.734686, -103.453495),
+            new google.maps.LatLng(20.735223, -103.453434),
+            new google.maps.LatLng(20.735290, -103.454187)
+        ];
+
+        var areaD = [
+            new google.maps.LatLng(20.73613122893, -103.45411026),
+            new google.maps.LatLng(20.73533228293, -103.454184025),
+            new google.maps.LatLng(20.73526455419, -103.4534249598),
+            new google.maps.LatLng(20.73607228015,-103.45327475614)
+        ];
+
+        var areaE = [
+            new google.maps.LatLng(20.736248, -103.45411496),
+            new google.maps.LatLng(20.736189, -103.45325531),
+            new google.maps.LatLng(20.7374789,-103.45303067),
+            new google.maps.LatLng(20.7376319,-103.45398889)
+        ];
+        
+        var areaF = [
+            new google.maps.LatLng(20.732681, -103.457917),
+            new google.maps.LatLng(20.732639, -103.457318),
+            new google.maps.LatLng(20.733943, -103.457194),
+            new google.maps.LatLng(20.734011, -103.457808),
+            new google.maps.LatLng(20.733537, -103.457784),
+            new google.maps.LatLng(20.733281, -103.457867),
+            new google.maps.LatLng(20.733281, -103.457867)
+        ];
+
+        var areaG = [
+            new google.maps.LatLng(20.732290, -103.457081),
+            new google.maps.LatLng(20.732219, -103.456017),
+            new google.maps.LatLng(20.732914, -103.456438),
+            new google.maps.LatLng(20.732941, -103.457238),
+            new google.maps.LatLng(20.732635, -103.457276),
+            new google.maps.LatLng(20.732628, -103.457163),
+            new google.maps.LatLng(20.732500, -103.457156),
+            new google.maps.LatLng(20.732467, -103.457096)
+        ];
+
+        var areaH = [
+            new google.maps.LatLng(20.732073, -103.455824),
+            new google.maps.LatLng(20.731982, -103.455156),
+            new google.maps.LatLng(20.732334, -103.454660),
+            new google.maps.LatLng(20.732653, -103.454614),
+            new google.maps.LatLng(20.732711, -103.455140),
+            new google.maps.LatLng(20.732391, -103.455594),
+            new google.maps.LatLng(20.732412, -103.455992),
+            new google.maps.LatLng(20.732172, -103.455926)
+        ];
+
+        var areaI = [
+            new google.maps.LatLng(20.732749, -103.453675),
+            new google.maps.LatLng(20.732625, -103.453048),
+            new google.maps.LatLng(20.733305, -103.452900),
+            new google.maps.LatLng(20.733395, -103.453542)
+        ];
+
+         var areaJ = [
+            new google.maps.LatLng(20.7366273, -103.45298642),
+            new google.maps.LatLng(20.736505616, -103.452214),
+            new google.maps.LatLng(20.735819552, -103.4523997),
+            new google.maps.LatLng(20.735940586,-103.453143328)
+        ];
+
+        area_A = new google.maps.Polygon({
+            paths: areaA,
+            strokeColor: "#FF9900",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#FF9900",
+            fillOpacity: 0.35
+        });
+
+        area_B = new google.maps.Polygon({
+            paths: areaB,
+            strokeColor: "#FF0000",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#FF0000",
+            fillOpacity: 0.35
+        });
+
+        area_C = new google.maps.Polygon({
+            paths: areaC,
+            strokeColor: "#66CC66",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#66CC66",
+            fillOpacity: 0.35
+        });
+
+        area_D = new google.maps.Polygon({
+            paths: areaD,
+            strokeColor: "#FF9900",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#FF9900",
+            fillOpacity: 0.35
+        });
+
+        area_E = new google.maps.Polygon({
+            paths: areaE,
+            strokeColor: "#FF9900",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#FF9900",
+            fillOpacity: 0.35
+        });
+
+        area_F = new google.maps.Polygon({
+            paths: areaF,
+            strokeColor: "#FF0000",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#FF0000",
+            fillOpacity: 0.35
+        });
+
+        area_G = new google.maps.Polygon({
+            paths: areaG,
+            strokeColor: "#FF9900",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#FF9900",
+            fillOpacity: 0.35
+        });
+
+        area_H = new google.maps.Polygon({
+            paths: areaH,
+            strokeColor: "#FF9900",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#FF9900",
+            fillOpacity: 0.35
+        });
+
+        area_I = new google.maps.Polygon({
+            paths: areaI,
+            strokeColor: "#FF9900",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#FF9900",
+            fillOpacity: 0.35
+        });
+
+        area_J = new google.maps.Polygon({
+            paths: areaJ,
+            strokeColor: "#FF9900",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#FF9900",
+            fillOpacity: 0.35
+        });
+
+        area_A.setMap(map);
+        area_B.setMap(map);
+        area_C.setMap(map);
+        area_D.setMap(map);
+        area_E.setMap(map);
+        area_F.setMap(map);
+        area_G.setMap(map);
+        area_H.setMap(map);
+        area_I.setMap(map);
+        area_J.setMap(map);
+
+	//Color Amarillo 
+	//area_F.setOptions({strokeColor: "#FF9900", strokeOpacity: 0.8, strokeWeight: 2, fillColor: "#FF9900", fillOpacity: 0.35});
+	//Color Rojo
+	//area_F.setOptions({strokeColor: "#FF0000", strokeOpacity: 0.8, strokeWeight: 2, fillColor: "#FF0000", fillOpacity: 0.35});
+	//Color Verde
+	//area_F.setOptions({strokeColor: "#66CC66", strokeOpacity: 0.8, strokeWeight: 2, fillColor: "#66CC66", fillOpacity: 0.35});
+
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div class="ui grid">
+         <div  class="ui blue top fixed inverted menu">
+                <div class="item" id="backArrow">
+                    <i class="chevron left icon"></i>
+                </div>
+                <div class="right menu">
+                
+                    <div class="item" id="settings">
+                        <i class="setting icon"></i>
+                    </div>
+              </div>                
+      </div>
+
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+
+     <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="dist/semantic.min.js"></script>
+      <script type="text/javascript" src="js/AreaMapa/topBarIconLinks.js"></script>
+  </body>
+</html>
