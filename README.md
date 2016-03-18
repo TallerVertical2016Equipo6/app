@@ -1,9 +1,11 @@
-![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/master/img/12874095_10208946591051114_943659871_o.jpg "Logo Title Text 1")
-# Pocket Park
+
+<p align="center">
+  <img src = "https://github.com/TallerVertical2016Equipo6/app/blob/master/img/splashScreen.png"/>
+</p>
 ==============
 # Documentation
 ## Synopsis
-This project was conceived by Students of Tecnológico de Monterrey Campus Guadalajara in collaboration with Intel, it is focused on smart parking, the students should implement an app that helps users to find available parking lot, unable to get to their class on time, which will help people to interconnect to its daily activities.
+This project was conceived by Students of Tecnológico de Monterrey Campus Guadalajara in collaboration with Intel, it is focused on smart parking, the students should implement an app that helps users to find available parking lot, unable to get to their class on time, which will help people to interconnect and integrate emerging technology into their daily activities.
 ##Screenshots of our web page:
 -Splash screen of the web application, first interaction with the user
 ![alt text](https://github.com/TallerVertical2016Equipo6/app/blob/e1c4d930f9490132d8e72ade19c4768a404f5ab1/img/스크린샷%202016-03-17%20오후%2011.10.22.png "Logo Title Text 1")
@@ -19,15 +21,12 @@ This project was conceived by Students of Tecnológico de Monterrey Campus Guada
 In this modern ages, wasting time, affects strongly to individuals, and it has lots of consequences, so this application is made to save time. This applications helps the user to save up as much time as possible. 
 
 ## Installation
-in order to use our application, Pocket Park, the user has to download our repository from Github link, and the download link is: https://github.com/TallerVertical2016Equipo6. _Important_ it is only compatible on android devices, and it’s not available for IOS devices yet.
+in order to use our application, Pocket Park, the user has to download our repository from Github link, and the download link is: https://github.com/TallerVertical2016Equipo6. _Important_ Right now it is only compatible on android devices.
+
 ## API Reference
-###jStorage
-JStorage was used in order to save local information, the requirement for this library, the user has to add this lines in its code.
-```
-	  <!-- Necessary for jstorage, keys are "user-type" and "selected area"-->
-	  <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
-      <script src="https://raw.github.com/andris9/jStorage/master/jstorage.js"></script>
-	  <script type="text/javascript" src="js/main/mainmenu.js"></script>
+###localStorage
+
+localStorage was used in order to save information directly, localStorage is supported on the web browser. Data is written in an array that stores itself in a JSON file.
 ```
 ###jQuery
 ```
@@ -55,6 +54,12 @@ Semantic is a framework that helps programmers to simplify the design and the st
 Where ```ID```is the identifier of the parking lot area.
 ## Tests
 Test were made on a small model, design of a parking lot, which has sensor in order to recognize how many spots it has for each zone, and how many spots are available on specific zone that user wants to know.
+
+
+## Demo
+
+
+
 ## License
 Intel Edison, 
  
